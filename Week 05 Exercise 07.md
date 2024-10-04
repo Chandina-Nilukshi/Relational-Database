@@ -7,7 +7,7 @@ update game<br>
 set co2_consumed = co2_consumed + 500,<br>
 location = (select ident from airport where name = "Nottingham Airport")<br>
 where screen_name = "Vesa";<br>
-![1](https://github.com/user-attachments/assets/4cecc803-d779-4bd0-bc69-9598e12ba2d5)
+![q1](https://github.com/user-attachments/assets/07699938-50ef-4ddb-b751-4cfb5bf06ebf)
 
 Question 02<br>
 Answer: goal_reached table<br>
@@ -15,8 +15,9 @@ Answer: goal_reached table<br>
 
 Question 03<br>
 delete from goal_reached;<br>
-![3](https://github.com/user-attachments/assets/8aae65ae-5294-4c7d-9b43-09b2b3482922)
+![q3](https://github.com/user-attachments/assets/433c0b9a-8533-4619-89c1-033b6e781e46)
+
 
 Question 04<br>
 delete from game;<br>
-![4](https://github.com/user-attachments/assets/83746adf-e3d1-42b8-90d3-8d8769d1e052)
+![q4](https://github.com/user-attachments/assets/b2ee780d-b9c8-4dc3-9c70-0b01cc40baf3)
