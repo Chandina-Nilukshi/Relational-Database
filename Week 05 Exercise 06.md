@@ -4,31 +4,31 @@
 
 Question 01<br>
 select max(elevation_ft) as "max(elevation_ft)" from airport;
-![1](https://github.com/user-attachments/assets/f71719a3-222d-4dcc-8c83-c3d14bff4a82)
+![q1](https://github.com/user-attachments/assets/3bc5c1c6-18b5-4b2e-b381-db675f9558f5)
 
 Question 02<br>
 select continent, count(*) <br>
 from country <br>
 group by continent;<br>
-![2](https://github.com/user-attachments/assets/24fe8e58-47f8-42c5-97e7-d47377f0ff8c)
+![q2](https://github.com/user-attachments/assets/78eba26e-f774-4b41-948e-09d48a24e94b)
 
 Question 03<br>
 select game.screen_name, count(*) <br>
 from game, goal_reached where game.id = goal_reached.game_id <br>
 group by screen_name;<br>
-![3](https://github.com/user-attachments/assets/db1ccea0-3bd1-4041-905d-2f1af6e7155a)
+![q3](https://github.com/user-attachments/assets/8fcc4b48-0506-48ad-b826-c050a8fa9118)
 
 Question 04<br>
 select screen_name from game<br>
 where co2_consumed in (<br>
 select min(co2_consumed) from game);<br>
-![4](https://github.com/user-attachments/assets/252745b8-09a3-40d4-aeaf-4a679ce5c740)
+![q4](https://github.com/user-attachments/assets/4f69b743-c6dc-45c8-8d7c-e63324b3cfb9)
 
 Question 05<br>
 select country.name, count(*) from country<br>
 join airport on airport.iso_country = country.iso_country<br>
 group by country.iso_country order by count(*) desc limit 50;<br>
-![5](https://github.com/user-attachments/assets/3f96fe1c-74ff-4fe9-8964-4ea61fa73514)
+![q5](https://github.com/user-attachments/assets/c9fb2a78-4073-426a-9e78-9d173fde3ca8)
 
 Question 06<br>
 select country.name<br>
@@ -36,28 +36,28 @@ from country, airport<br>
 where airport.iso_country = country.iso_country<br>
 group by country.iso_country<br>
 having count(*) >= 1000;<br>
-![6](https://github.com/user-attachments/assets/80d44a44-be38-4e1a-9794-d0aa064f1c21)
+![q6](https://github.com/user-attachments/assets/083fd594-b203-47c1-920f-3c4505531f6f)
 
 Question 07<br>
 select name from airport<br>
 where elevation_ft in (<br>
 select max(elevation_ft) from airport);<br>
-![7](https://github.com/user-attachments/assets/a860e292-12ea-406d-928f-68b5178abb84)
+![q7](https://github.com/user-attachments/assets/40ca1fe4-4f92-4ea9-ae07-6273ec9264cc)
 
 Quwation 08<br>
 select country.name from country, airport<br>
 where airport.iso_country = country.iso_country and elevation_ft in (<br>
 select max(elevation_ft) from airport);<br>
-![8](https://github.com/user-attachments/assets/e1d841ed-66fe-4d3a-a147-939a23c1be89)
+![q8](https://github.com/user-attachments/assets/29ee6ed6-9047-41f7-9715-207281cc72cd)
 
 Question 09<br>
 select count(*) from game, goal_reached <br>
 where game.id = goal_reached.game_id <br>
 and screen_name = "Vesa" group by game_id;<br>
-![9](https://github.com/user-attachments/assets/e3774600-5691-4a52-bcc2-152b1987ddad)
+![q9](https://github.com/user-attachments/assets/d7ece94f-df4f-4893-95c7-0690b1b53064)
 
 Question 10<br>
 select name from airport<br>
 where latitude_deg in(<br>
 select min(latitude_deg) from airport);<br>
-![10](https://github.com/user-attachments/assets/99c016c7-fe1b-4f2d-a229-33bb5fe78fba)
+![q10](https://github.com/user-attachments/assets/72e77293-ed11-4080-aa31-b186e56bec6d)
